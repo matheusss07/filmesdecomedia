@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+
+body{
+    background: fixed;
+    background-repeat: no-repeat;
+    background-image: url(https://www.studentkortet.se/wp-content/uploads/2023/04/disneyplus-large-2023.jpg);
+    background-position: 50%;
+    background-color: black;
+    
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 5px 5px 5px blue;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    margin-top: 10em;
+    font-size: 1.4em;
+    font-family: monospace;
+    text-shadow: 5px 5px 5px blue
+
+}
+a{
+    color: rgb(4, 0, 255);
+    margin-top: 10px;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+}
+.main-header h1{
+font-size: 5em;
+line-height: 1.2em;
+}
+
+.container{
+max-width: 1200px;
+margin: auto;
+overflow: auto;
+padding: 0 2em;
+}
+
+.card{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-gap: 2em;
+background-color: rgba(224, 205, 205, 0);
+margin-bottom: 2em;
+border-radius: 10px;
+}
+
+img{
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  blue
+}
+.card.card:nth-child(even) img{
+    order: 2;
+}
+
+footer{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
